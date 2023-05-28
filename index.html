@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Kicks</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/shoe-3.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Icon font -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer></script>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="content__container"></div>
+
+    <section class="hero">
+      <nav class="hero__nav">
+        <img src="./img/logo.png" alt="logo" class="hero__img" />
+        <ul class="hero__ul">
+          <span class="hero__ul__menu"
+            ><ion-icon
+              class="hero__ul__menu__btn"
+              name="menu-outline"></ion-icon
+          ></span>
+          <li class="hero__ul__li hero__ul__li--active">
+            <a href="#">Home</a>
+          </li>
+          <li class="hero__ul__li"><a href="#">About</a></li>
+          <li class="hero__ul__li"><a href="#">Product</a></li>
+          <li class="hero__ul__li"><a href="#">New Arrivels</a></li>
+        </ul>
+        <div class="hero__buttons">
+          <span class="hero__buttons__search">
+            <ion-icon class="icon" name="search-outline"></ion-icon>
+          </span>
+          <!-- <span class="divider"></span> -->
+          <span class="hero__buttons__cart">
+            <ion-icon class="icon" name="cart-outline"></ion-icon>
+          </span>
+        </div>
+      </nav>
+      <h1 class="hero__heading">Comfort in every <span>step</span></h1>
+      <p class="hero__para">Best <span>Sneaker</span> reseller in India</p>
+      <div class="hero__shoe__slider">
+        <h2 class="new__arrival">New Arrivals</h2>
+        <button
+          class="hero__shoe__slider__control hero__shoe__slider__control--left">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </button>
+        <button
+          class="hero__shoe__slider__control hero__shoe__slider__control--right">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+
+        <div class="hero__shoe__slider__dots">
+          <span class="hero__shoe__slider__dots--active"></span>
+          <span class="hero__shoe__slider__dots--deactive"></span>
+          <span class="hero__shoe__slider__dots--deactive"></span>
+        </div>
+
+        <!-- Shoe card start -->
+        <div class="hero__shoe">
+          <div class="hero__shoe__text">
+            <h2 class="hero__shoe__text__h2">Nike Airforce Lv 07</h2>
+            <p class="hero__shoe__text__p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              perferendis ratione nemo.
+            </p>
+            <div class="hero__shoe__text__info">
+              <p class="hero__shoe__text__price">$200</p>
+              <button class="hero__shoe__text__buy">Buy Now</button>
+            </div>
+          </div>
+          <div class="hero__shoe__img">
+            <img src="./img/shoe-1.png" alt="shoe-1" />
+          </div>
+        </div>
+        <!-- Shoe card end -->
+        <!-- Shoe card start -->
+        <div class="hero__shoe">
+          <div class="hero__shoe__text">
+            <h2 class="hero__shoe__text__h2">Nike Airforce Lv 07</h2>
+            <p class="hero__shoe__text__p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              perferendis ratione nemo.
+            </p>
+            <div class="hero__shoe__text__info">
+              <p class="hero__shoe__text__price">$240</p>
+              <button class="hero__shoe__text__buy">Buy Now</button>
+            </div>
+          </div>
+          <div class="hero__shoe__img">
+            <img src="./img/shoe-2.png" alt="shoe-2" />
+          </div>
+        </div>
+        <!-- Shoe card end -->
+        <!-- Shoe card start -->
+        <div class="hero__shoe">
+          <div class="hero__shoe__text">
+            <h2 class="hero__shoe__text__h2">Nike Low Green</h2>
+            <div class="hero__shoe__text__tags">
+              <span class="hero__shoe__text__tag hero__shoe__text__tag--green"
+                >Low</span
+              >
+              <span class="hero__shoe__text__tag hero__shoe__text__tag--yellow"
+                >Dunks</span
+              >
+            </div>
+            <p class="hero__shoe__text__p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              perferendis ratione nemo.
+            </p>
+            <div class="hero__shoe__text__info">
+              <p class="hero__shoe__text__price">$100</p>
+              <button class="hero__shoe__text__buy">Buy Now &rarr;</button>
+            </div>
+          </div>
+          <div class="hero__shoe__img">
+            <div class="hero__shoe__img__discount">
+              <h3>50%</h3>
+              <p>Discount</p>
+            </div>
+            <img src="./img/shoe-3.png" alt="shoe-3" />
+          </div>
+        </div>
+        <!-- Shoe card end -->
+      </div>
+    </section>
+    <!-- Section 2 -->
+    <section class="chracterstics">
+      <div class="cm cm--1">
+        <div class="cm__icon">
+          <ion-icon class="icon" name="shield-checkmark-outline"></ion-icon>
+        </div>
+        <h3 class="cm__heading">Secure Payments</h3>
+        <p class="cm__text">Secure on order</p>
+      </div>
+
+      <div class="cm cm--2">
+        <div class="cm__icon">
+          <ion-icon class="icon" name="time-outline"></ion-icon>
+        </div>
+        <h3 class="cm__heading">24/7 Payments</h3>
+        <p class="cm__text">Contact us any time</p>
+      </div>
+
+      <div class="cm cm--3">
+        <div class="cm__icon">
+          <ion-icon class="icon" name="cube-outline"></ion-icon>
+        </div>
+        <h3 class="cm__heading">Fast Delivery</h3>
+        <p class="cm__text">Fast Delivery on order</p>
+      </div>
+    </section>
+    <!-- collection section -->
+    <section class="collection">
+      <h2 class="collection__heading">Our Collection</h2>
+      <p class="collection__text">You will love it</p>
+      <div class="collection__container">
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <!-- <ion-icon name="heart"></ion-icon> -->
+            <ion-icon class="icon love" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-1.png" alt="shoe-1" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-2.png" alt="shoe-2" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-3.png" alt="shoe-3" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-4.png" alt="shoe-4" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-5.png" alt="shoe-5" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-6.png" alt="shoe-6" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-7.png" alt="shoe-7" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-8.png" alt="shoe-8" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-9.png" alt="shoe-9" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-10.png" alt="shoe-10" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-11.png" alt="shoe-11" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-1.png" alt="show-1" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-1.png" alt="show-1" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-1.png" alt="show-1" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+        <!-- shoe card start -->
+        <div class="kick">
+          <span class="kick__love">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+          </span>
+          <img src="./img/kick-3.png" alt="shoe-3" class="kick__img" />
+          <div class="kick__info">
+            <h3 class="kick__info__titel">Nike Airforce Shoe</h3>
+            <span class="kick__info__rating">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <p>4.3</p>
+            </span>
+            <div class="kick__info__price">
+              <div class="kick__info__price__box">
+                <p class="kick__info__price__box__old">$120</p>
+                <h4 class="kick__info__price__box__current">$100</h4>
+              </div>
+              <button class="kick__info__price__buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- shoe card end -->
+      </div>
+      <button class="collection__loadmore">Show more</button>
+    </section>
+    <!-- About US -->
+    <section class="about__us">
+      <div class="about__us__info">
+        <div class="about__us__img">
+          <img src="./img/about_us_kick.png" alt="About us kicks" />
+        </div>
+        <div class="about__us__text">
+          <h4 class="about__us__text__h4">About Us</h4>
+          <h2 class="about__us__text__h2">
+            We Provide High <span>Quality</span> Shoes.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est minima
+            libero veritatis at voluptates iure ullam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            harum, repellat,
+          </p>
+          <button class="about__us__text__button">Read More &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2 class="testimonials__h2">Our Client Reviews</h2>
+      <p class="testimonials__p">Testimonials</p>
+      <div class="testimonials__container">
+        <div class="testimonials__review">
+          <figure class="testimonials__review__img">
+            <img src="./img/user-1.jpg" alt="User 1" />
+          </figure>
+          <figcaption
+            class="testimonials__review__name testimonials__review--first">
+            <h4>Jhon Smith</h4>
+            <p>a week ago</p>
+            <span>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+            </span>
+          </figcaption>
+          <p class="testimonials__review__text">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aspernatur autem eius eos, quam ut"
+          </p>
+        </div>
+
+        <div class="testimonials__review testimonials__review--main">
+          <figure class="testimonials__review__img">
+            <img src="./img/user-2.jpg" alt="User 2" />
+          </figure>
+          <figcaption class="testimonials__review__name">
+            <h4>Jamal carry</h4>
+            <p>2 week ago</p>
+            <span>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+            </span>
+          </figcaption>
+          <p class="testimonials__review__text">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aspernatur autem eius eos, quam ut deleniti explicabo"
+          </p>
+        </div>
+        <div class="testimonials__review testimonials__review--last">
+          <figure class="testimonials__review__img">
+            <img src="./img/user-3.jpg" alt="User 3user-3.jpg" />
+          </figure>
+          <figcaption class="testimonials__review__name">
+            <h4>William Goldberg</h4>
+            <p>1 month ago</p>
+            <span>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+            </span>
+          </figcaption>
+          <p class="testimonials__review__text">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aspernatur autem eius eos, quam ut deleniti explicabo"
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Newslater -->
+    <section class="newslatter">
+      <h2 class="newslatter__h2">Subscribe to Newslatter</h2>
+      <p class="newslatter__p">
+        Subscribe to our newslatter and stay updated !
+      </p>
+      <div class="newslatter__container">
+        <input
+          class="newslatter__container__input"
+          type="text"
+          placeholder="Enter Your Email address..." />
+        <input
+          class="newslatter__container__btn"
+          type="submit"
+          value="Subscribe" />
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <button class="footer__stt">
+        <ion-icon class="icon" name="chevron-up-outline"></ion-icon>
+      </button>
+      <div class="footer__img">
+        <img src="./img/logo.png" alt="Footer Logo" />
+      </div>
+      <ul class="footer__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="footer__socialmedia">
+        <a href="#"><ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="logo-youtube"></ion-icon></a>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2023 All rights reserved. <a href="#">My Kicks Pvt.</a>
+      </p>
+    </footer>
+  </body>
+</html>

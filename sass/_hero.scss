@@ -1,0 +1,481 @@
+.hero {
+  // height: 100vh;
+
+  &__img {
+    height: 5rem;
+  }
+
+  &__nav {
+    height: 7rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__menu {
+      & ion-icon {
+        font-size: 3.4rem;
+        display: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 200;
+
+        @media only screen and (max-width: $bp-xxxsmall) {
+          position: absolute;
+          display: block;
+          margin: 0 auto;
+          transform: translateY(-45%);
+        }
+      }
+
+      &__btn--active {
+        position: fixed !important;
+      }
+    }
+
+    &__li {
+      list-style: none;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        color: $color-gray-hover;
+      }
+
+      &--active {
+        color: $color-primary;
+        font-weight: 600;
+      }
+    }
+
+    &__li a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-xxxsmall) {
+        display: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__search,
+    &__cart {
+      line-height: 1;
+      cursor: pointer;
+
+      & .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: "Oswald", sans-serif;
+    font-size: 12rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: -4px;
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 1;
+
+    & span {
+      color: $color-primary;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 8rem;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__para {
+    font-size: 2.4rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    & span {
+      color: $color-primary;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &__shoe {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 38rem;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f6fcee;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 4rem;
+    border: 2px solid $color-primary;
+    border-radius: 20px;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 4%);
+    user-select: none;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: 1fr 1.5fr;
+    }
+
+    @media only screen and (max-width: $bp-xxsmall) {
+      height: 65rem;
+      max-width: 50rem;
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: $bp-xxxxsmall) {
+      width: 100%;
+    }
+
+    &__slider {
+      position: relative;
+      height: 38rem;
+
+      @media only screen and (max-width: $bp-xxsmall) {
+        height: 65rem;
+        grid-template-rows: 1dr 2fr;
+      }
+
+      &__control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6rem;
+        height: 6rem;
+        background-color: $color-primary;
+        border: none;
+        border-radius: 50%;
+        box-shadow: rgb(46 46 46 / 20%) 0px 0.8rem 1rem;
+        font-size: 2.5rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.05s ease-in-out;
+
+        @media only screen and (max-width: $bp-xxsmall) {
+          width: 6rem;
+          height: 6rem;
+          font-size: 2.4rem;
+          z-index: 10;
+        }
+
+        &:active {
+          box-shadow: none;
+        }
+
+        &--left {
+          left: 5%;
+          @media only screen and (max-width: $bp-largest) {
+            left: 0%;
+          }
+
+          @media only screen and (max-width: $bp-medium) {
+            left: -3%;
+          }
+
+          @media only screen and (max-width: $bp-xxsmall) {
+            left: 5%;
+          }
+
+          @media only screen and (max-width: $bp-xxxsmall) {
+            left: -3%;
+          }
+        }
+
+        &--right {
+          right: 5%;
+          @media only screen and (max-width: $bp-largest) {
+            right: 0%;
+          }
+
+          @media only screen and (max-width: $bp-medium) {
+            right: -3%;
+          }
+
+          @media only screen and (max-width: $bp-xxsmall) {
+            right: 5%;
+          }
+
+          @media only screen and (max-width: $bp-xxxsmall) {
+            right: -3%;
+          }
+        }
+      }
+
+      &__dots {
+        width: fit-content;
+        background-color: $color-primary;
+        border-radius: 100px;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        z-index: 10;
+        box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1);
+
+        &--active {
+          background-color: #fff;
+        }
+
+        &--deactive {
+          background-color: #ffffffaa;
+        }
+
+        & span {
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__text {
+      padding-left: 4rem;
+
+      &__h2 {
+        font-size: 4.4rem;
+        line-height: 1.1;
+        color: $color-primary;
+        letter-spacing: -1px;
+
+        @media only screen and (max-width: $bp-largest) {
+          font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-xxxsmall) {
+          font-size: 3.4rem;
+        }
+      }
+
+      &__tag {
+        font-size: 1.4rem;
+        border-radius: 100px;
+        font-weight: 600;
+        color: #fff;
+        padding: 0.4rem 1.5rem;
+        display: inline-block;
+        margin: 0.8rem 0 2rem 0;
+
+        &--green {
+          background: $color-primary-dark;
+        }
+
+        &--yellow {
+          background: $color-secondary;
+        }
+      }
+
+      &__p {
+        width: 400px;
+        font-size: 1.8rem;
+        margin-bottom: 1.4rem;
+
+        @media only screen and (max-width: $bp-largest) {
+          width: 350px;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 300px;
+          margin-bottom: 2.4rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          width: 240px;
+        }
+      }
+
+      &__info {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      &__price {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #4c956c;
+        font-family: "Oswald", sans-serif;
+      }
+
+      &__buy {
+        font-family: inherit;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        margin-right: 2rem;
+        transform: all 0.75s ease;
+      }
+
+      @media only screen and (max-width: $bp-xxsmall) {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        transform: translateY(-2rem);
+        padding-left: 6rem;
+      }
+    }
+
+    &__img {
+      position: relative;
+
+      @media only screen and (max-width: $bp-xxsmall) {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+      }
+
+      &__discount {
+        background-color: $color-primary;
+        padding: 1rem;
+        border-radius: 6px;
+        color: $color-primary-light;
+        display: inline-block;
+        line-height: 1.1;
+        position: absolute;
+        right: 2%;
+        top: -2rem;
+        animation: wave 6s linear infinite;
+        z-index: 20;
+        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+
+        @media only screen and (max-width: $bp-smallest) {
+          top: 0;
+          right: 0;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+          top: -2rem;
+          right: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-xxsmall) {
+          top: -2rem;
+          right: 2rem;
+        }
+
+        & h3 {
+          font-size: 2.6rem;
+          font-weight: 600;
+        }
+
+        & p {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+
+      & img {
+        width: 100%;
+        transform: rotate(330deg) translateY(-2rem);
+
+        @media only screen and (max-width: $bp-smallest) {
+          width: 240px;
+          display: block;
+          margin: 0 auto;
+        }
+
+        @media only screen and (max-width: $bp-xxsmall) {
+          width: 240px;
+          transform: rotate(330deg) translate(-4rem, -2rem);
+        }
+
+        @media only screen and (max-width: $bp-xxxsmall) {
+          width: 240px;
+          transform: rotate(330deg) translate(0rem, 2rem);
+        }
+      }
+    }
+  }
+}
+
+.new__arrival {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  z-index: 20;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background-color: $color-primary;
+  padding: 0 3rem;
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  color: #f5fbed;
+
+  @media only screen and (max-width: $bp-xxxxsmall) {
+    font-size: 1.8rem;
+    display: block;
+    width: 18rem;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(1rem);
+  }
+
+  50% {
+    transform: translateY(-1rem);
+  }
+
+  75% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

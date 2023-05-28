@@ -1,0 +1,41 @@
+.chracterstics {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-items: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    gap: 4rem;
+  }
+}
+
+.cm {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  grid-template-rows: repeat(2, 3.4rem);
+
+  &--3 {
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__icon .icon {
+    font-size: 4rem;
+    color: $color-primary-light;
+    background-color: $color-primary;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
+  &__heading {
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 1.7rem;
+    grid-column: 2 / -1;
+  }
+}

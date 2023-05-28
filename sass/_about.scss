@@ -1,0 +1,136 @@
+.about__us {
+  background-color: $color-primary;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: auto;
+  }
+
+  @media only screen and (max-width: $bp-xxsmall) {
+    height: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../img/ripped.png);
+    z-index: 30;
+    height: 100%;
+    transform: translateY(-20%);
+    background-repeat-y: no-repeat;
+
+    @media only screen and (max-width: $bp-small) {
+      transform: translateY(-17%);
+    }
+
+    @media only screen and (max-width: $bp-xxsmall) {
+      transform: translateY(-14%);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../img/ripped.png);
+    z-index: 30;
+    height: 100%;
+    transform: translateY(20%) rotate(180deg);
+    background-repeat-y: no-repeat;
+
+    @media only screen and (max-width: $bp-small) {
+      transform: translateY(17%) rotate(180deg);
+    }
+
+    @media only screen and (max-width: $bp-xxsmall) {
+      transform: translateY(14%) rotate(180deg);
+    }
+  }
+
+  &__info {
+    padding-top: 8rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    z-index: 40;
+
+    @media only screen and (max-width: $bp-xxxsmall) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img img {
+    width: 100%;
+    transform: scale(0.8);
+    border-radius: 20px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      transform: scale(1);
+      border-radius: 5px;
+    }
+
+    @media only screen and (max-width: $bp-xxxsmall) {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    color: $color-primary-light;
+
+    &__h4 {
+      font-size: 1.8rem;
+    }
+
+    &__h2 {
+      font-size: 4.8rem;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+      font-weight: 800;
+
+      @media only screen and (max-width: $bp-xxsmall) {
+        font-size: 3.8rem;
+      }
+
+      & span {
+        color: $color-secondary-light;
+      }
+    }
+
+    & p {
+      font-size: 1.7rem;
+      width: 50rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: auto;
+      }
+    }
+
+    &__button {
+      font-family: inherit;
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 0.6rem 1rem;
+      border: none;
+      background-color: $color-primary-light;
+      border-radius: 4px;
+      color: $color-primary;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+  }
+}

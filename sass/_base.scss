@@ -1,0 +1,91 @@
+//primary color
+$color-primary: #4c956c;
+$color-primary-dark: #2c6e49;
+$color-primary-light: #f2f2f2;
+
+//secondary color
+$color-secondary: #d68c45;
+$color-secondary-light: #eba561;
+
+// //acent color
+// $color-accent: #ffc9b9;
+
+//grays
+$color-gray: #242423;
+$color-gray-light: #333533;
+$color-gray-hover: #2e2e2ec7;
+
+//background-color
+// $color-background-light: #fefee3;
+$color-background-light: #f5e6bf;
+
+// Break Points
+$bp-largest: 84.375em; //1350px
+$bp-large: 75em; //1200px
+$bp-medium: 68.75em; // 1100px
+$bp-small: 62.5em; //1000px
+$bp-smallest: 56.25em; //900px
+$bp-xsmall: 50em; //800px
+$bp-xxsmall: 43.75em; //700px
+$bp-xxxsmall: 37.6em; //600px
+$bp-xxxxsmall: 25em; // 400px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-primary-light;
+}
+
+// "Oswald"
+body {
+  // width: 1300px;
+  // margin: 0 auto;
+  font-family: "Wix Madefor Text", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $color-gray-light;
+  background-color: $color-background-light;
+  // background-image: url(./img/back.png);
+}
+
+section {
+  padding: 0 10rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: $bp-xxxxsmall) {
+    padding: 0 2rem;
+  }
+}
+
+.content__container {
+  user-select: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
